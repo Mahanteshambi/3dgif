@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Payment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body onload="updatePage()" >
+	<div class="limiter">
+		<div class="container-payment">
+			<div class="wrap-payment">
+				<form class="payment-form validate-form" id="body">
+					
+					<span class="form-title p-b-26">
+						Download your 3D avatar:
+					</span>
+					
+					<div align="center">
+						<i class='fas fa-user' style='font-size:66px'></i>
+					</div>
+					
+					<span class="form-user p-b-16" id="user">
+						Mahantesh
+					</span>
+					
+					<div class="wrap-input100 validate-input" data-validate = "Enter amount & Max transfer of 10000">
+						<input class="input100" type="number" id="quantity" name="quantity" min="1" max="10000">
+						<span class="focus-input100" data-placeholder="Unique ID"></span>
+					</div>
+					
+					<button class="button" onClick="payAmount(event)">
+							Download
+					</button>
+					
+					<img  alt="Download 3D" id="#3dgif"  width=250 height=250/>
+					<div id="#url">t</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
